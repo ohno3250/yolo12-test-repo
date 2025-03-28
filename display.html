@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div>
+        <!-- 推論後の画像を表示する -->
+        <img src="{{ url_for('display_file', filename=user_image) }}" alt="User Image" width="512">
+    </div>
+
+    <div>
+        <!-- 戻るボタンを表示する -->
+        <a href="{{ url_for('upload_file') }}" class="back-button">Back to Upload</a>
+    </div>
+</body>
+
+</html>
+
